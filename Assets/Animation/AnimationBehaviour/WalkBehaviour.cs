@@ -4,6 +4,7 @@ using UnityEngine;
 public class WalkBehaviour : StateMachineBehaviour
 {
     public event Action walkEvent = null;
+    public event Action<int> walkCountEvent = null;
     
     public float[] footDownThreshold; // 발이 땅에 닿는 순간 임계값
     private int wasFootCount = 0; // 발이 땅에 있었는지 여부 확인
@@ -17,11 +18,12 @@ public class WalkBehaviour : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        walkEvent?.Invoke();
+
         float normalizeTime = stateInfo.normalizedTime % 1;
 
         if (Mathf.Abs(normalizeTime - footDownThreshold[wasFootCount])<0.05f)
         {
-            walkEvent?.Invoke();
             wasFootCount++;
             if (wasFootCount > footDownThreshold.Length - 1)
                 wasFootCount = 0;

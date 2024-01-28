@@ -41,10 +41,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footDownThreshold:
-  - 0
   - 0.368
   - 0.791
-  - 1
 --- !u!1107 &-6412393807301684011
 AnimatorStateMachine:
   serializedVersion: 6
