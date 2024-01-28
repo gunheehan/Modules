@@ -53,18 +53,19 @@ public class MoveInputController : MonoBehaviour
     {
         Debug.Log("On Start Move");
         animator.SetBool("Walk",true);
+        moveModel.OnChangeMoveState(context);
     }
     
     private void OnPerformedMove(InputAction.CallbackContext context)
     {
         Debug.Log("On Move Chnage");
-            moveModel.OnChangeMoveState(context);
+        moveModel.OnChangeMoveState(context);
     }
     
     private void OnCanceledMove(InputAction.CallbackContext context)
     {
         Debug.Log("End Move");
-            moveModel.OnChangeMoveState(context);
+        moveModel.OnChangeMoveState(context);
         animator.SetBool("Walk",false);
     }
 }

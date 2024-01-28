@@ -7,6 +7,7 @@ public class MoveModel
     public event Action<Vector3, float> OnMoveEvent = null; 
     
     private WalkBehaviour walkBehaviour = null;
+    private Vector2 inputDirection;
     private Vector3 direction;
     private float speed;
     private Camera cam;
@@ -19,7 +20,6 @@ public class MoveModel
     public void SetMoveModel(WalkBehaviour behaviour)
     {
         walkBehaviour = behaviour;
-        walkBehaviour.walkEvent += OnMove;
         cam = Camera.main;
     }
     
@@ -29,6 +29,10 @@ public class MoveModel
             return;
         
         Vector2 input = context.ReadValue<Vector2>();
+
+        if (inputDirection == input)
+            return;
+        
         float distance = Vector2.Distance(Vector2.zero, input);
         distance = distance > 1 ? 1 : distance;
 
@@ -47,11 +51,8 @@ public class MoveModel
 
         Quaternion v3Rotation = Quaternion.Euler(0f, cam.transform.localEulerAngles.y, 0f);
         direction = v3Rotation * direction;
-    }
 
-    private void OnMove()
-    {
-        Debug.Log("Move Action Play");
+        inputDirection = input;
         OnMoveEvent?.Invoke(direction, speed);
     }
 }
