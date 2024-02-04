@@ -35,6 +35,7 @@ public class MoveInputController : MonoBehaviour
         playerControl.Player.Move.started += OnStartedMove;
         playerControl.Player.Move.performed += OnPerformedMove;
         playerControl.Player.Move.canceled += OnCanceledMove;
+        playerControl.Player.Jump.started += OnStartedJump;
 
         moveModel.OnMoveEvent += characterMove.UpdateMoveState;
     }
@@ -45,7 +46,8 @@ public class MoveInputController : MonoBehaviour
         playerControl.Player.Move.started -= OnStartedMove;
         playerControl.Player.Move.performed -= OnPerformedMove;
         playerControl.Player.Move.canceled -= OnCanceledMove;
-        
+        playerControl.Player.Jump.started -= OnStartedJump;
+
         moveModel.OnMoveEvent -= characterMove.UpdateMoveState;
     }
     
@@ -67,5 +69,10 @@ public class MoveInputController : MonoBehaviour
         Debug.Log("End Move");
         moveModel.OnChangeMoveState(context);
         animator.SetBool("Walk",false);
+    }
+
+    private void OnStartedJump(InputAction.CallbackContext context)
+    {
+        animator.SetTrigger("Jump");
     }
 }
