@@ -25,8 +25,11 @@ public class MoveInputController : MonoBehaviour
     private void SetModel()
     {
         moveModel = new MoveModel();
+        moveModel.InitModel();
         WalkBehaviour walk = animator.GetBehaviour<WalkBehaviour>();
-        moveModel.SetMoveModel(walk);
+        walk.walkEvent += moveModel.OnMove;
+        RunBehaviour run = animator.GetBehaviour<RunBehaviour>();
+        run.RunEvent += moveModel.OnRun;
     }
 
     private void InputSubscrive()
@@ -36,6 +39,8 @@ public class MoveInputController : MonoBehaviour
         playerControl.Player.Move.performed += OnPerformedMove;
         playerControl.Player.Move.canceled += OnCanceledMove;
         playerControl.Player.Jump.started += OnStartedJump;
+        playerControl.Player.Run.started += OnStartedRun;
+        playerControl.Player.Run.canceled += OnCancledRun;
 
         moveModel.OnMoveEvent += characterMove.UpdateMoveState;
     }
@@ -47,7 +52,9 @@ public class MoveInputController : MonoBehaviour
         playerControl.Player.Move.performed -= OnPerformedMove;
         playerControl.Player.Move.canceled -= OnCanceledMove;
         playerControl.Player.Jump.started -= OnStartedJump;
-
+        playerControl.Player.Run.started -= OnStartedRun;
+        playerControl.Player.Run.canceled -= OnCancledRun;
+        
         moveModel.OnMoveEvent -= characterMove.UpdateMoveState;
     }
     
@@ -74,5 +81,15 @@ public class MoveInputController : MonoBehaviour
     private void OnStartedJump(InputAction.CallbackContext context)
     {
         animator.SetTrigger("Jump");
+    }
+
+    private void OnStartedRun(InputAction.CallbackContext context)
+    {
+        animator.SetBool("Run",true);
+    }
+
+    private void OnCancledRun(InputAction.CallbackContext context)
+    {
+        animator.SetBool("Run",false);
     }
 }

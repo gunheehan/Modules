@@ -6,7 +6,6 @@ public class MoveModel
 {
     public event Action<Vector3, float> OnMoveEvent = null; 
     
-    private WalkBehaviour walkBehaviour = null;
     private Vector3 direction;
     private float speed;
     private Camera cam;
@@ -16,13 +15,11 @@ public class MoveModel
     private readonly float MAXSPEEDRANGE = 0.75f;
     private readonly float MINSPEEDRANGE = 0.25f;
 
-    public void SetMoveModel(WalkBehaviour behaviour)
+    public void InitModel()
     {
-        walkBehaviour = behaviour;
-        walkBehaviour.walkEvent += OnMove;
         cam = Camera.main;
     }
-    
+
     public void OnChangeMoveState(InputAction.CallbackContext context)
     {
         if (cam == null)
@@ -50,9 +47,15 @@ public class MoveModel
 
     }
 
-    private void OnMove()
+    public void OnMove()
     {
         Debug.Log("Move Action Play");
         OnMoveEvent?.Invoke(direction, speed);
+    }
+
+    public void OnRun()
+    {
+        Debug.Log("Run Action Play");
+        OnMoveEvent?.Invoke(direction, speed * 2);
     }
 }
