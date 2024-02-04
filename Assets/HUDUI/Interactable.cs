@@ -9,13 +9,10 @@ public class Interactable : MonoBehaviour, IPointerDownHandler, IPointerClickHan
     [SerializeField] private float radius = .5f;
     private ScreenInteractable screenInteractable;
     private SphereCollider collider;
-
-    private readonly string PLAYER = "Player";
     
     void Start()
     {
         screenInteractable = new ScreenInteractable();
-        screenInteractable.SetLayerMask(PLAYER);
         collider = GetComponent<SphereCollider>();
         collider.isTrigger = true;
         collider.radius = radius;
