@@ -3,25 +3,25 @@ using UnityEngine;
 public class EmotionBehaviour : StateMachineBehaviour
 {
     private readonly string EMOTION = "Emotion";
-    private bool isExit = false;
+    private readonly string WALK = "Walk";
     
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-    //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        animator.SetBool(WALK, false);
+    }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (isExit)
-            ExitEmotion(animator);
+        if (animator.GetBool(WALK))
+            animator.SetInteger(EMOTION,-1);
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        ExitEmotion(animator);
+        animator.SetInteger(EMOTION,-1);
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
@@ -35,14 +35,4 @@ public class EmotionBehaviour : StateMachineBehaviour
     //{
     //    // Implement code that sets up animation IK (inverse kinematics)
     //}
-
-    public void InputExirEmotion()
-    {
-        isExit = true;
-    }
-    private void ExitEmotion(Animator animator)
-    {
-        animator.SetInteger(EMOTION,-1);
-        isExit = false;
-    }
 }

@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class MoveModel
 { 
     public event Action<Vector3, float> OnChangeMoveInfo = null;
-    
+    public event Action OnMoveUpdate = null;
     private Vector3 direction;
     private float speed;
     private Camera cam;
@@ -46,5 +46,6 @@ public class MoveModel
         direction = v3Rotation * direction;
         
         OnChangeMoveInfo?.Invoke(direction, speed);
+        OnMoveUpdate?.Invoke();
     }
 }
