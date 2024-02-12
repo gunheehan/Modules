@@ -6,12 +6,10 @@ public class MoveInputController : MonoBehaviour
     private PlayerInputControl playerControl;
     private Animator animator = null;
     private MoveModel moveModel;
-    private CharacterMove characterMove;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-        characterMove = gameObject.AddComponent<CharacterMove>();
         playerControl = new PlayerInputControl();
         SetModel();
         InputSubscrive();
@@ -27,9 +25,10 @@ public class MoveInputController : MonoBehaviour
         moveModel = new MoveModel();
         moveModel.InitModel();
         WalkBehaviour walk = animator.GetBehaviour<WalkBehaviour>();
-        walk.walkEvent += moveModel.OnMove;
+        moveModel.OnChangeMoveInfo += walk.SetMoveInfo;
+
         RunBehaviour run = animator.GetBehaviour<RunBehaviour>();
-        run.RunEvent += moveModel.OnRun;
+        moveModel.OnChangeMoveInfo += run.SetMoveInfo;
     }
 
     private void InputSubscrive()
@@ -41,8 +40,6 @@ public class MoveInputController : MonoBehaviour
         playerControl.Player.Jump.started += OnStartedJump;
         playerControl.Player.Run.started += OnStartedRun;
         playerControl.Player.Run.canceled += OnCancledRun;
-
-        moveModel.OnMoveEvent += characterMove.UpdateMoveState;
     }
 
     private void InputUnSubscrive()
@@ -54,8 +51,6 @@ public class MoveInputController : MonoBehaviour
         playerControl.Player.Jump.started -= OnStartedJump;
         playerControl.Player.Run.started -= OnStartedRun;
         playerControl.Player.Run.canceled -= OnCancledRun;
-        
-        moveModel.OnMoveEvent -= characterMove.UpdateMoveState;
     }
     
     private void OnStartedMove(InputAction.CallbackContext context)

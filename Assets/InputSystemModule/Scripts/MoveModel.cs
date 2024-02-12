@@ -3,8 +3,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class MoveModel
-{
-    public event Action<Vector3, float> OnMoveEvent = null; 
+{ 
+    public event Action<Vector3, float> OnChangeMoveInfo = null;
     
     private Vector3 direction;
     private float speed;
@@ -44,18 +44,7 @@ public class MoveModel
 
         Quaternion v3Rotation = Quaternion.Euler(0f, cam.transform.localEulerAngles.y, 0f);
         direction = v3Rotation * direction;
-
-    }
-
-    public void OnMove()
-    {
-        Debug.Log("Move Action Play");
-        OnMoveEvent?.Invoke(direction, speed);
-    }
-
-    public void OnRun()
-    {
-        Debug.Log("Run Action Play");
-        OnMoveEvent?.Invoke(direction, speed * 2);
+        
+        OnChangeMoveInfo?.Invoke(direction, speed);
     }
 }
