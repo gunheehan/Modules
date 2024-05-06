@@ -4,23 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b494121f-3330-4fd3-b37a-31b1a71ac595" name="Changes" comment="inputSysyem Import, unity version dowm">
+    <list default="true" id="b494121f-3330-4fd3-b37a-31b1a71ac595" name="Changes" comment="RunBehaviour.cs -&gt; WalkBehaviour.cs로 통일">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Modules/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Modules/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/AnimationBehaviour/RunBehaviour.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/AnimationBehaviour/RunBehaviour.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/AnimationBehaviour/WalkBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/AnimationBehaviour/WalkBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/EmotionItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/EmotionItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CycleBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CycleBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EmotionBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EmotionBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EmotionEndBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EmotionEndBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveInputController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveInputController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveModel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/AnimationBehaviour/WalkBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/AnimationBehaviour/WalkBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Animation/EmotionItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/MixamoController.controller" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CycleBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Animation/Scripts/CharacterAnimationModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/HUDUI/ScreenInteractable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InputSystemModule/Scripts/CharacterMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveInputController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -88,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706425093919</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="RunBehaviour.cs -&gt; WalkBehaviour.cs로 통일">
+      <created>1714987077961</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714987077961</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +128,7 @@
     <MESSAGE value="project Init" />
     <MESSAGE value="gitignore" />
     <MESSAGE value="inputSysyem Import, unity version dowm" />
-    <option name="LAST_COMMIT_MESSAGE" value="inputSysyem Import, unity version dowm" />
+    <MESSAGE value="RunBehaviour.cs -&gt; WalkBehaviour.cs로 통일" />
+    <option name="LAST_COMMIT_MESSAGE" value="RunBehaviour.cs -&gt; WalkBehaviour.cs로 통일" />
   </component>
 </project>

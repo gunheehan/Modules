@@ -4,12 +4,22 @@ using UnityEngine.InputSystem;
 public class MoveInputController : MonoBehaviour
 {
     private PlayerInputControl playerControl;
-    private Animator animator = null;
+    private CharacterAnimationModel _animationModel = null;
     private MoveModel moveModel;
 
+    public CharacterAnimationModel animationModel
+    {
+        get
+        {
+            if (_animationModel == null)
+                _animationModel = new CharacterAnimationModel();
+            return _animationModel;
+        }
+    }
+    
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        animationModel.Animator = GetComponent<Animator>();
         playerControl = new PlayerInputControl();
         SetModel();
         InputSubscrive();
@@ -23,13 +33,14 @@ public class MoveInputController : MonoBehaviour
     private void SetModel()
     {
         moveModel = new MoveModel();
-        moveModel.InitModel();
-        WalkBehaviour[] walk = animator.GetBehaviours<WalkBehaviour>();
+
+        WalkBehaviour[] walk = animationModel.Animator.GetBehaviours<WalkBehaviour>();
 
         foreach (WalkBehaviour walkBehaviour in walk)
         {
             moveModel.OnChangeMoveInfo += walkBehaviour.SetMoveInfo;
         }
+        moveModel.OnMoveUpdate += animationModel.PlayWalk;
     }
 
     private void InputSubscrive()
@@ -56,7 +67,6 @@ public class MoveInputController : MonoBehaviour
     
     private void OnStartedMove(InputAction.CallbackContext context)
     {
-        animator.SetBool("Walk",true);
         moveModel.OnChangeMoveState(context);
     }
     
@@ -68,21 +78,20 @@ public class MoveInputController : MonoBehaviour
     private void OnCanceledMove(InputAction.CallbackContext context)
     {
         moveModel.OnChangeMoveState(context);
-        animator.SetBool("Walk",false);
     }
 
     private void OnStartedJump(InputAction.CallbackContext context)
     {
-        animator.SetTrigger("Jump");
+        animationModel.PlayJump();
     }
 
     private void OnStartedRun(InputAction.CallbackContext context)
     {
-        animator.SetBool("Run",true);
+        animationModel.PlayRun(true);
     }
 
     private void OnCancledRun(InputAction.CallbackContext context)
     {
-        animator.SetBool("Run",false);
+        animationModel.PlayRun(false);
     }
 }
