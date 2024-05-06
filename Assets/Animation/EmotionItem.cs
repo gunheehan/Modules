@@ -8,7 +8,7 @@ public class EmotionItem : MonoBehaviour
     [SerializeField] private Animator animator;
     private Button clickButton;
 
-    private readonly string EMOTION = "Emotion";
+    private readonly string EMOTION = "CycleEmotion";
     // Start is called before the first frame update
     void Start()
     {

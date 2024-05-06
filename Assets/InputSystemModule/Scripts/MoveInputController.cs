@@ -24,11 +24,12 @@ public class MoveInputController : MonoBehaviour
     {
         moveModel = new MoveModel();
         moveModel.InitModel();
-        WalkBehaviour walk = animator.GetBehaviour<WalkBehaviour>();
-        moveModel.OnChangeMoveInfo += walk.SetMoveInfo;
+        WalkBehaviour[] walk = animator.GetBehaviours<WalkBehaviour>();
 
-        RunBehaviour run = animator.GetBehaviour<RunBehaviour>();
-        moveModel.OnChangeMoveInfo += run.SetMoveInfo;
+        foreach (WalkBehaviour walkBehaviour in walk)
+        {
+            moveModel.OnChangeMoveInfo += walkBehaviour.SetMoveInfo;
+        }
     }
 
     private void InputSubscrive()
