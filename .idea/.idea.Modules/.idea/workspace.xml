@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b494121f-3330-4fd3-b37a-31b1a71ac595" name="Changes" comment="RunBehaviour.cs -&gt; WalkBehaviour.cs로 통일">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Modules/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Modules/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CycleBehaviour.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CycleBehaviour.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EmotionBehaviour.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EmotionBehaviour.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EmotionEndBehaviour.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EmotionEndBehaviour.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveInputController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveInputController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveModel.cs" afterDir="false" />
-    </list>
+    <list default="true" id="b494121f-3330-4fd3-b37a-31b1a71ac595" name="Changes" comment="AnimationModel 구조 적용" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714987077961</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="AnimationModel 구조 적용">
+      <created>1714988100669</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714988100669</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +126,7 @@
     <MESSAGE value="gitignore" />
     <MESSAGE value="inputSysyem Import, unity version dowm" />
     <MESSAGE value="RunBehaviour.cs -&gt; WalkBehaviour.cs로 통일" />
-    <option name="LAST_COMMIT_MESSAGE" value="RunBehaviour.cs -&gt; WalkBehaviour.cs로 통일" />
+    <MESSAGE value="AnimationModel 구조 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value="AnimationModel 구조 적용" />
   </component>
 </project>
