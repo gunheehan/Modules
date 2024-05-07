@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b494121f-3330-4fd3-b37a-31b1a71ac595" name="Changes" comment="navmesh 추가 및 적용">
+    <list default="true" id="b494121f-3330-4fd3-b37a-31b1a71ac595" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Modules/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Modules/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Camera/Scripts/PointerTouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Camera/Scripts/PointMoveController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Camera/Scripts/PointerTouch.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Camera/Scripts/PointMoveController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystemModule/InputSystem/PlayerInputControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystemModule/InputSystem/PlayerInputControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystemModule/InputSystem/PlayerInputControl.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystemModule/InputSystem/PlayerInputControl.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveInputController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveInputController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,20 +22,15 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/AnimationBehaviour/WalkBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/AnimationBehaviour/WalkBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Animation/EmotionItem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/MixamoController.controller" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Animation/Scripts/CharacterAnimationModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Camera/Scripts/CameraLook.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Camera/Scripts/PointerTouch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Camera/Scripts/PointMoveController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/HUDUI/ScreenInteractable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InputSystemModule/Scripts/CharacterMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveInputController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/InputSystemModule/Scripts/MoveInputController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1e4be4c6ad7f4a8cbbe8e5ff1d8c9758ba00/44/def1282a/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70ac6c76a7334195a8e5cc3b877208a4d400/34/250d1581/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -56,13 +55,33 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Standalone Player.UnitTests (batch mode)">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.10f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
       <method v="2" />
     </configuration>
   </component>
@@ -75,6 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1706424410690</updated>
       <workItem from="1706424416664" duration="1521000" />
+      <workItem from="1715081258779" duration="3153000" />
     </task>
     <task id="LOCAL-00001" summary="project Init">
       <created>1706424440152</created>
@@ -139,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714990984029</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Point 이동 산출 base 로직 추가">
+      <created>1714992148618</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714992148618</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +197,7 @@
     <MESSAGE value="camera Follow 및 시선 처리 관리 로직 추가" />
     <MESSAGE value="샘플 맵 Import" />
     <MESSAGE value="navmesh 추가 및 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="navmesh 추가 및 적용" />
+    <MESSAGE value="Point 이동 산출 base 로직 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="Point 이동 산출 base 로직 추가" />
   </component>
 </project>
