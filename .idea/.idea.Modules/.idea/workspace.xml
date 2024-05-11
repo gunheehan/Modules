@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b494121f-3330-4fd3-b37a-31b1a71ac595" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Modules/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Modules/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystemModule/InputSystem/PlayerInputControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystemModule/InputSystem/PlayerInputControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystemModule/InputSystem/PlayerInputControl.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystemModule/InputSystem/PlayerInputControl.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveInputController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveInputController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="b494121f-3330-4fd3-b37a-31b1a71ac595" name="Changes" comment="touchInput 비활성화" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +21,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/HUDUI/ScreenInteractable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InputSystemModule/Scripts/CharacterMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveInputController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/InputSystemModule/Scripts/MoveInputController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1e4be4c6ad7f4a8cbbe8e5ff1d8c9758ba00/44/def1282a/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70ac6c76a7334195a8e5cc3b877208a4d400/34/250d1581/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -93,7 +88,7 @@
       <updated>1706424410690</updated>
       <workItem from="1706424416664" duration="1521000" />
       <workItem from="1715081258779" duration="3616000" />
-      <workItem from="1715405412444" duration="1889000" />
+      <workItem from="1715405412444" duration="2212000" />
     </task>
     <task id="LOCAL-00001" summary="project Init">
       <created>1706424440152</created>
@@ -172,7 +167,28 @@
       <option name="project" value="LOCAL" />
       <updated>1715085540841</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Touch InputSystem 추가">
+      <created>1715408365578</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715408365578</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Touch Move 적용중">
+      <created>1715408378554</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1715408378554</updated>
+    </task>
+    <task id="LOCAL-00014" summary="touchInput 비활성화">
+      <created>1715408400229</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715408400229</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +221,9 @@
     <MESSAGE value="navmesh 추가 및 적용" />
     <MESSAGE value="Point 이동 산출 base 로직 추가" />
     <MESSAGE value="Pointer move 수정중" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pointer move 수정중" />
+    <MESSAGE value="Touch InputSystem 추가" />
+    <MESSAGE value="Touch Move 적용중" />
+    <MESSAGE value="touchInput 비활성화" />
+    <option name="LAST_COMMIT_MESSAGE" value="touchInput 비활성화" />
   </component>
 </project>
