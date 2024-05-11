@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class MoveInputController : MonoBehaviour
 {
     private PlayerInputControl playerControl;
+    private TouchInput touchInput;
     private CharacterAnimationModel _animationModel = null;
     private MoveModel moveModel;
 
@@ -21,6 +22,7 @@ public class MoveInputController : MonoBehaviour
     {
         animationModel.Animator = GetComponent<Animator>();
         playerControl = new PlayerInputControl();
+        touchInput = new TouchInput();
         SetModel();
         InputSubscrive();
     }
@@ -52,8 +54,9 @@ public class MoveInputController : MonoBehaviour
         playerControl.Player.Jump.started += OnStartedJump;
         playerControl.Player.Run.started += OnStartedRun;
         playerControl.Player.Run.canceled += OnCancledRun;
-        playerControl.Player.PointMove.started += OnUpdateTabMove;
-        playerControl.Player.PointMove.performed += OnUpdateTabMove;
+
+        touchInput.Enable();
+        touchInput.Touch.TouchPress.started += OnUpdateTabMove;
     }
 
     private void InputUnSubscrive()
@@ -65,7 +68,9 @@ public class MoveInputController : MonoBehaviour
         playerControl.Player.Jump.started -= OnStartedJump;
         playerControl.Player.Run.started -= OnStartedRun;
         playerControl.Player.Run.canceled -= OnCancledRun;
-        playerControl.Player.PointMove.started -= OnUpdateTabMove;
+
+        touchInput.Disable();
+        touchInput.Touch.TouchPress.started -= OnUpdateTabMove;
     }
     
     private void OnStartedMove(InputAction.CallbackContext context)
@@ -100,8 +105,9 @@ public class MoveInputController : MonoBehaviour
 
     private void OnUpdateTabMove(InputAction.CallbackContext context)
     {
-        Vector2 input = context.ReadValue<Vector2>();
-        Debug.Log("GetTabMove : " + input);
+        Debug.Log("GetTabMove : " + touchInput.Touch.TouchPosition.ReadValue<Vector2>());
+        
+        Vector2 input = touchInput.Touch.TouchPosition.ReadValue<Vector2>();
 
         PointMoveController pointMoveController = Camera.main.gameObject.GetComponent<PointMoveController>();
         pointMoveController.CheckPointMove(input);
