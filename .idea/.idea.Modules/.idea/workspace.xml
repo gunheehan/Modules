@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b494121f-3330-4fd3-b37a-31b1a71ac595" name="Changes" comment="touchInput 비활성화" />
+    <list default="true" id="b494121f-3330-4fd3-b37a-31b1a71ac595" name="Changes" comment="AnimationControl 최신화">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Modules/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Modules/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/PlayerAnimationControl.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/PlayerAnimationControl.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Camera/Prefabs/Cameras.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Camera/Prefabs/Cameras.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +20,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Animation/EmotionItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/PlayerAnimationControl.controller" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Animation/Scripts/CharacterAnimationModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Camera/Prefabs/Cameras.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Camera/Scripts/CameraLook.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Camera/Scripts/PointMoveController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/HUDUI/ScreenInteractable.cs" root0="FORCE_HIGHLIGHTING" />
@@ -88,7 +95,7 @@
       <updated>1706424410690</updated>
       <workItem from="1706424416664" duration="1521000" />
       <workItem from="1715081258779" duration="3616000" />
-      <workItem from="1715405412444" duration="2212000" />
+      <workItem from="1715405412444" duration="3506000" />
     </task>
     <task id="LOCAL-00001" summary="project Init">
       <created>1706424440152</created>
@@ -188,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715408400229</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="AnimationControl 최신화">
+      <created>1715408727684</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1715408727684</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +238,7 @@
     <MESSAGE value="Touch InputSystem 추가" />
     <MESSAGE value="Touch Move 적용중" />
     <MESSAGE value="touchInput 비활성화" />
-    <option name="LAST_COMMIT_MESSAGE" value="touchInput 비활성화" />
+    <MESSAGE value="AnimationControl 최신화" />
+    <option name="LAST_COMMIT_MESSAGE" value="AnimationControl 최신화" />
   </component>
 </project>
