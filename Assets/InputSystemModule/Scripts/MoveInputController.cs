@@ -55,8 +55,8 @@ public class MoveInputController : MonoBehaviour
         playerControl.Player.Run.started += OnStartedRun;
         playerControl.Player.Run.canceled += OnCancledRun;
 
-        touchInput.Enable();
-        touchInput.Touch.TouchPress.started += OnUpdateTabMove;
+        // touchInput.Enable();
+        // touchInput.Touch.TouchPress.started += OnUpdateTabMove;
     }
 
     private void InputUnSubscrive()
@@ -69,8 +69,8 @@ public class MoveInputController : MonoBehaviour
         playerControl.Player.Run.started -= OnStartedRun;
         playerControl.Player.Run.canceled -= OnCancledRun;
 
-        touchInput.Disable();
-        touchInput.Touch.TouchPress.started -= OnUpdateTabMove;
+        // touchInput.Disable();
+        // touchInput.Touch.TouchPress.started -= OnUpdateTabMove;
     }
     
     private void OnStartedMove(InputAction.CallbackContext context)
