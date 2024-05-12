@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b494121f-3330-4fd3-b37a-31b1a71ac595" name="Changes" comment="AnimationControl 최신화">
+    <list default="true" id="b494121f-3330-4fd3-b37a-31b1a71ac595" name="Changes" comment="채팅 기능 추가">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Modules/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Modules/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/PlayerAnimationControl.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/PlayerAnimationControl.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Camera/Prefabs/Cameras.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Camera/Prefabs/Cameras.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Scripts/CharacterAnimationModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Scripts/CharacterAnimationModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/MaruBuri-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/MaruBuri-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,16 +21,32 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Animation/EmotionItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/PlayerAnimationControl.controller" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/PlayerAnimationControl.controller" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/Scripts/CharacterAnimationModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/Scripts/CharacterAnimationModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Animation/Scripts/CharacterAnimationModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/Scripts/CharacterAnimationModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/Scripts/CharacterAnimationModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/Scripts/CharacterAnimationModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Camera/Prefabs/Cameras.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Camera/Scripts/CameraLook.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Camera/Scripts/PointMoveController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Chat/Scripts/ChatClientModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Chat/Scripts/ChatItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Chat/Scripts/ChatMessageModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Chat/Scripts/ChatPresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Chat/Scripts/ChatView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/HUDUI/ScreenInteractable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InputSystemModule/Scripts/CharacterMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveInputController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/InputSystemModule/Scripts/MoveInputController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/TextMesh Pro/Resources/TMP Settings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1e4be4c6ad7f4a8cbbe8e5ff1d8c9758ba00/44/def1282a/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70ac6c76a7334195a8e5cc3b877208a4d400/34/250d1581/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -95,7 +111,7 @@
       <updated>1706424410690</updated>
       <workItem from="1706424416664" duration="1521000" />
       <workItem from="1715081258779" duration="3616000" />
-      <workItem from="1715405412444" duration="3506000" />
+      <workItem from="1715405412444" duration="14336000" />
     </task>
     <task id="LOCAL-00001" summary="project Init">
       <created>1706424440152</created>
@@ -202,7 +218,63 @@
       <option name="project" value="LOCAL" />
       <updated>1715408727684</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="animationControl 애니메이션 미싱 수정">
+      <created>1715409787480</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1715409787480</updated>
+    </task>
+    <task id="LOCAL-00017" summary="UICamera 추가">
+      <created>1715409799536</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1715409799536</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Canvas UICamera 적용">
+      <created>1715409813689</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1715409813689</updated>
+    </task>
+    <task id="LOCAL-00019" summary="TMP 폰트 추가">
+      <created>1715415339890</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1715415339890</updated>
+    </task>
+    <task id="LOCAL-00020" summary="기본 폰트 변경">
+      <created>1715415823190</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1715415823190</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Photon Import">
+      <created>1715416040693</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1715416040693</updated>
+    </task>
+    <task id="LOCAL-00022" summary="채팅 모듈 추가">
+      <created>1715496148327</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1715496148327</updated>
+    </task>
+    <task id="LOCAL-00023" summary="채팅 기능 추가">
+      <created>1715496158386</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1715496158386</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +311,14 @@
     <MESSAGE value="Touch Move 적용중" />
     <MESSAGE value="touchInput 비활성화" />
     <MESSAGE value="AnimationControl 최신화" />
-    <option name="LAST_COMMIT_MESSAGE" value="AnimationControl 최신화" />
+    <MESSAGE value="animationControl 애니메이션 미싱 수정" />
+    <MESSAGE value="UICamera 추가" />
+    <MESSAGE value="Canvas UICamera 적용" />
+    <MESSAGE value="TMP 폰트 추가" />
+    <MESSAGE value="기본 폰트 변경" />
+    <MESSAGE value="Photon Import" />
+    <MESSAGE value="채팅 모듈 추가" />
+    <MESSAGE value="채팅 기능 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="채팅 기능 추가" />
   </component>
 </project>
