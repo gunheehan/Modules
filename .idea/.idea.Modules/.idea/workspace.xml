@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b494121f-3330-4fd3-b37a-31b1a71ac595" name="Changes" comment="채팅 기능 추가">
+    <list default="true" id="b494121f-3330-4fd3-b37a-31b1a71ac595" name="Changes" comment="Basic 씬 분리 및 씬 Init 로직 구성">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Modules/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Modules/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/EmotionItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/EmotionItem.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animation/Scripts/CharacterAnimationModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Scripts/CharacterAnimationModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/MaruBuri-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/MaruBuri-Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BaseScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BaseScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,17 +21,9 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Animation/EmotionItem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/PlayerAnimationControl.controller" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/PlayerAnimationControl.controller" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/Scripts/CharacterAnimationModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/Scripts/CharacterAnimationModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Animation/Scripts/CharacterAnimationModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/Scripts/CharacterAnimationModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/Scripts/CharacterAnimationModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Animation/Scripts/CharacterAnimationModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Camera/Prefabs/Cameras.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Camera/Scripts/CameraLook.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Camera/Scripts/Cameras.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Camera/Scripts/PointMoveController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Chat/Scripts/ChatClientModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Chat/Scripts/ChatItem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -39,13 +33,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/HUDUI/ScreenInteractable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InputSystemModule/Scripts/CharacterMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveInputController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/InputSystemModule/Scripts/MoveInputController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InputSystemModule/Scripts/MoveModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/BaseScene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Basic/BasicScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/TextMesh Pro/Resources/TMP Settings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1e4be4c6ad7f4a8cbbe8e5ff1d8c9758ba00/44/def1282a/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70ac6c76a7334195a8e5cc3b877208a4d400/34/250d1581/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
@@ -274,7 +270,42 @@
       <option name="project" value="LOCAL" />
       <updated>1715496158386</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="어드레서블 import">
+      <created>1716097695989</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1716097695989</updated>
+    </task>
+    <task id="LOCAL-00025" summary="어드레서블 아바타 모델 추가">
+      <created>1716097978368</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1716097978368</updated>
+    </task>
+    <task id="LOCAL-00026" summary="베이직 씬 추가">
+      <created>1716097994367</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1716097994367</updated>
+    </task>
+    <task id="LOCAL-00027" summary="미사용 모델 제거">
+      <created>1716098007206</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1716098007206</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Basic 씬 분리 및 씬 Init 로직 구성">
+      <created>1716100777328</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1716100777328</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,9 +327,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="project Init" />
-    <MESSAGE value="gitignore" />
-    <MESSAGE value="inputSysyem Import, unity version dowm" />
     <MESSAGE value="RunBehaviour.cs -&gt; WalkBehaviour.cs로 통일" />
     <MESSAGE value="AnimationModel 구조 적용" />
     <MESSAGE value="cinemachine import" />
@@ -319,6 +347,11 @@
     <MESSAGE value="Photon Import" />
     <MESSAGE value="채팅 모듈 추가" />
     <MESSAGE value="채팅 기능 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="채팅 기능 추가" />
+    <MESSAGE value="어드레서블 import" />
+    <MESSAGE value="어드레서블 아바타 모델 추가" />
+    <MESSAGE value="베이직 씬 추가" />
+    <MESSAGE value="미사용 모델 제거" />
+    <MESSAGE value="Basic 씬 분리 및 씬 Init 로직 구성" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic 씬 분리 및 씬 Init 로직 구성" />
   </component>
 </project>

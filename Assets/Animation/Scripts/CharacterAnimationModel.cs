@@ -3,35 +3,28 @@ using UnityEngine;
 public class CharacterAnimationModel
 {
     public Animator Animator;
-    
-    private readonly string Speed = "Speed";
-    private readonly string RUN = "Run";
-    private readonly string JUMP = "Jump";
-    private readonly string EMOTIONSTATE = "Emotion";
-    private readonly string CYCLEEMOTIONSTATE = "CycleEmotion"; 
-    private readonly string EFFECT = "Effect";
 
     private AnimationInfo.CycleAnim currentCycle;
 
     public void PlayWalk(float moveSpeed)
     {
-        Animator.SetFloat(Speed, moveSpeed);
+        Animator.SetFloat(AnimationInfo.ANI_SPEED, moveSpeed);
     }
 
     public void PlayRun(bool isrun)
     {
-        Animator.SetBool(RUN, isrun);
+        Animator.SetBool(AnimationInfo.ANI_RUN, isrun);
     }
 
     public void PlayJump()
     {
-        Animator.SetTrigger(JUMP);
+        Animator.SetTrigger(AnimationInfo.ANI_JUMP);
     }
 
     public void PlayEmotion(AnimationInfo.EmotionAnim emotion)
     {
         PlayWalk(0);
-        Animator.SetInteger(EMOTIONSTATE, (int)emotion);
+        Animator.SetInteger(AnimationInfo.ANI_EMOTION, (int)emotion);
     }
 
     public void PlayCycleEmotion(AnimationInfo.CycleAnim cycleEmotion)
@@ -42,7 +35,7 @@ public class CharacterAnimationModel
         else
             currentCycle = cycleEmotion;
 
-        Animator.SetInteger(CYCLEEMOTIONSTATE, (int)currentCycle);
+        Animator.SetInteger(AnimationInfo.ANI_CYCLEEMOTION, (int)currentCycle);
     }
 
     public void PlayPressEmotion(string pressName, bool isPress)
@@ -54,6 +47,6 @@ public class CharacterAnimationModel
     public void PlayEffect(AnimationInfo.EffectAnim effect)
     {
         PlayWalk(0);
-        Animator.SetInteger(EFFECT, (int)effect);
+        Animator.SetInteger(AnimationInfo.ANI_EFFECT, (int)effect);
     }
 }

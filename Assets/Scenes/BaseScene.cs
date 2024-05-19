@@ -5,6 +5,8 @@ public class BaseScene : MonoBehaviour
 {
     [SerializeField] private Cameras cameras;
     [SerializeField] private Transform spawnPos;
+    [SerializeField] private EmotionPresenter emotionPresenter;
+    
     void Start()
     {
         InitPlayer();
@@ -35,7 +37,7 @@ public class BaseScene : MonoBehaviour
     {
         if (cameras == null)
         {
-            Debug.Log("Camera Component Null");
+            Debug.LogWarning("Camera Component Null");
             return;
         }
         
@@ -45,6 +47,12 @@ public class BaseScene : MonoBehaviour
 
     private void SetPlayerUI(GameObject player)
     {
+        if (emotionPresenter == null)
+        {
+            Debug.LogWarning("EmotionPresenter Component Null");
+            return;
+        }
         
+        emotionPresenter.InitAnimationModel(player);
     }
 }
