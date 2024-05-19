@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Avatar
+  m_EditorClassIdentifier: 
+  m_GroupName: Avatar
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 654729d3b1f21423ca7255e03720ea90
+  m_SerializeEntries:
+  - m_GUID: 29e674a9b4d55458086546bd3ce0788a
+    m_Address: Model
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d44b88fcebc42494fabe6c9acfc49058, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c58b761968e4b4bd4b39d1ecacbcb328, type: 2}
+    - {fileID: 11400000, guid: 39cdf67efb55d43cca5c8cb507489587, type: 2}
