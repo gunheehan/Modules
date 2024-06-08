@@ -3,9 +3,7 @@ using UnityEngine;
 public class CharacterAnimationModel
 {
     public Animator Animator;
-
-    private AnimationInfo.CycleAnim currentCycle;
-
+    
     public void PlayWalk(float moveSpeed)
     {
         Animator.SetFloat(AnimationInfo.ANI_SPEED, moveSpeed);
@@ -29,6 +27,9 @@ public class CharacterAnimationModel
 
     public void PlayCycleEmotion(AnimationInfo.CycleAnim cycleEmotion)
     {
+        AnimationInfo.CycleAnim currentCycle =
+            (AnimationInfo.CycleAnim)Animator.GetInteger(AnimationInfo.ANI_CYCLEEMOTION);
+        
         PlayWalk(0);
         if (currentCycle == cycleEmotion)
             currentCycle = AnimationInfo.CycleAnim.None;
