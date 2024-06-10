@@ -39,7 +39,7 @@
                 {
                     "name": "",
                     "id": "e686bcf9-1340-4d77-b608-3ffc62a700c4",
-                    "path": "<Touchscreen>/touch1/delta",
+                    "path": "<Touchscreen>/touch0/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -84,6 +84,17 @@
                     "name": "",
                     "id": "7b1c2e4e-290d-4b29-b311-73a50cb73c1d",
                     "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drag",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e171e799-5934-4593-bbb6-8ea1ee04a429",
+                    "path": "<Touchscreen>/touch0/press",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
