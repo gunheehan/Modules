@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b494121f-3330-4fd3-b37a-31b1a71ac595" name="Changes" comment="Basic 씬 분리 및 씬 Init 로직 구성">
-      <change beforePath="$PROJECT_DIR$/Assets/Camera/InputSystem/CameraControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Camera/InputSystem/CameraControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Camera/InputSystem/CameraControl.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Camera/InputSystem/CameraControl.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Camera/Scripts/CameraLook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Camera/Scripts/CameraLook.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+    <list default="true" id="b494121f-3330-4fd3-b37a-31b1a71ac595" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Modules/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Modules/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Camera/Prefabs/Cameras.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Camera/Prefabs/Cameras.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/MaruBuri-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/MaruBuri-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Camera/Scripts/CameraLook.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Camera/Scripts/Cameras.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Camera/Scripts/PointMoveController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CatchHumanMind/Scripts/InputFieldScaler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Chat/Scripts/ChatClientModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Chat/Scripts/ChatItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Chat/Scripts/ChatMessageModel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -43,7 +45,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/BaseScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Basic/BasicScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.7.0/Samples~/UIvsGameInput/UIvsGameInputHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/gunhee/Documents/GitHub/Modules/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1e4be4c6ad7f4a8cbbe8e5ff1d8c9758ba00/44/def1282a/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70ac6c76a7334195a8e5cc3b877208a4d400/34/250d1581/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -109,6 +110,7 @@
       <workItem from="1706424416664" duration="1521000" />
       <workItem from="1715081258779" duration="3616000" />
       <workItem from="1715405412444" duration="14336000" />
+      <workItem from="1718519000796" duration="3944000" />
     </task>
     <task id="LOCAL-00001" summary="project Init">
       <created>1706424440152</created>
@@ -306,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716100777328</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="camera Rotate 오류 수정">
+      <created>1718028509542</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1718028509542</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +337,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="RunBehaviour.cs -&gt; WalkBehaviour.cs로 통일" />
     <MESSAGE value="AnimationModel 구조 적용" />
     <MESSAGE value="cinemachine import" />
     <MESSAGE value="camera Follow 및 시선 처리 관리 로직 추가" />
@@ -353,6 +361,7 @@
     <MESSAGE value="베이직 씬 추가" />
     <MESSAGE value="미사용 모델 제거" />
     <MESSAGE value="Basic 씬 분리 및 씬 Init 로직 구성" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic 씬 분리 및 씬 Init 로직 구성" />
+    <MESSAGE value="camera Rotate 오류 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="camera Rotate 오류 수정" />
   </component>
 </project>
